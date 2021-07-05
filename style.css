@@ -26,7 +26,8 @@ section{
     height: 25rem;
     padding: 5%;    
     display:grid;
-    background-color:hsl(184, 100%, 22%)
+    background-color:hsl(184, 100%, 22%);
+    grid-template-rows: auto 1fr auto;
 }
 section:nth-child(1){
     border-radius:10px 0 0 10px;
@@ -38,4 +39,7 @@ section:nth-child(3){
     background-color: hsl(179, 100%, 13%);
 }
 
+.topcard{
+    height: 20px;
+}
 
