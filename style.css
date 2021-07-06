@@ -17,8 +17,7 @@ main{
     max-width: 60%;
     /* background-color:green; */
     display:flex;
-    /* padding: 10px; */
-    
+    /* padding: 10px; */    
 }
 
 section{    
@@ -28,6 +27,7 @@ section{
     display:grid;
     background-color:hsl(184, 100%, 22%);
     grid-template-rows: auto 1fr auto;
+    color: white;
 }
 section:nth-child(1){
     border-radius:10px 0 0 10px;
@@ -40,6 +40,50 @@ section:nth-child(3){
 }
 
 .topcard{
-    height: 20px;
+    height: 5rem;
 }
 
+.middlecard h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:2rem;
+    margin-bottom:10px;
+    text-transform:UpperCase;
+}
+
+.middlecard p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:12px;  
+    word-spacing: 2px; 
+    letter-spacing:1px;  
+    line-height:18px;
+    font-weight:400;
+}
+
+.bottomcard{
+    height: 3rem;
+    padding-top:10px;
+}
+
+.bottomcard button{
+    font-family: 'Lexend Deca', sans-serif;
+    width:7rem;
+    padding:.75rem;
+    border-radius:100px;
+    color:hsl(31, 77%, 52%);
+    cursor:pointer;
+}
+
+section:nth-child(2) > div.bottomcard button{
+    color:hsl(184, 100%, 22%);
+}
+
+section:nth-child(3) > div.bottomcard button{
+    color: hsl(179, 100%, 13%);
+}
+
+section:nth-child(-n+3) > div.bottomcard button:hover{
+    background-color: initial;
+    color:white;
+    border: solid 1.5px white;
+    
+}
