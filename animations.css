@@ -1,0 +1,30 @@
+@keyframes showCards{
+    from{
+        transform: translateX(-200%) scale(.7);
+    }
+    to{
+        transform: translateX(0%) scale(1);
+    }
+}
+
+section:nth-child(1){
+    animation-name: showCards;
+    animation-duration:.8s;
+    animation-timing-function: ease-in-out;  
+    
+}
+
+section:nth-child(2){
+    animation-name: showCards;
+    animation-duration:1s;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    
+}
+ 
+section:nth-child(3){
+    animation-name: showCards;
+    animation-duration:1.3s;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+}
